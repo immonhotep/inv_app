@@ -30,24 +30,43 @@ PyJWT for JWT token management and authorization
 API URLS:
 
 | Description | Urls | Methods | Authorization |
+
 | --- | --- |
-| API summary | http://127.0.0.1:8000/ | GET, HEAD, OPTIONS | for anybody |   
+
+| API summary | http://127.0.0.1:8000/ | GET, HEAD, OPTIONS | for anybody |
+
 | List, manage users | http://127.0.0.1:8000/manage-user/ | GET, POST, HEAD, OPTIONS | admin only, token or session required |
+
 | Detail, update, and delete users | http://127.0.0.1:8000/manage-user/{int:pk}/ | GET, POST, HEAD, OPTIONS | admin only, token, or session required |
+
 | Update User | http://127.0.0.1:8000/update-user/{int:pk} | GET, PUT, PATCH, HEAD, OPTIONS | authenticated users, token or session required |
-| Change password | http://127.0.0.1:8000/change-password/ | PUT, PATCH, OPTIONS | authenticated users, token or session required | 
-| Obtain JWT auth token | http://127.0.0.1:8000/token/ | POST, OPTIONS | for anybody, user and password will require | 
+
+| Change password | http://127.0.0.1:8000/change-password/ | PUT, PATCH, OPTIONS | authenticated users, token or session required |
+
+| Obtain JWT auth token | http://127.0.0.1:8000/token/ | POST, OPTIONS | for anybody, user and password will require |
+
 | Refresh JWT auth token | http://127.0.0.1:8000/token/refresh/ | POST, OPTIONS | for anybody, valid refress token will require |
+
 | List, create categories | http://127.0.0.1:8000/category/ | GET, POST, HEAD, OPTIONS | admin only, token or session required |
+
 | Detail, update, delete categories | http://127.0.0.1:8000/category/{slug:slug}/ | GET, PUT, DELETE, HEAD, OPTIONS | admin only, token or session required |
+
 | List, create distributors | http://127.0.0.1:8000/distributor/ | GET, POST, HEAD, OPTIONS | admin only, token or session required |
+
 | Detail, update, delete distributors | http://127.0.0.1:8000/distributor/{slug:slug}/ | GET, PUT, DELETE, HEAD, OPTIONS | admin only, token or session required |
-| List, create premises | http://127.0.0.1:8000/premises/ | GET, POST, HEAD, OPTIONS | admin only, token or session required | 
+
+| List, create premises | http://127.0.0.1:8000/premises/ | GET, POST, HEAD, OPTIONS | admin only, token or session required |
+
 | Detail, update, delete premises | http://127.0.0.1:8000/premises/{slug:slug}/ | GET, PUT, DELETE, HEAD, OPTIONS | admin only, token or session required |
-| List, create items | http://127.0.0.1:8000/item/ | GET, POST, HEAD, OPTIONS  | authenticated users, token or session required | 
-| Detail, update, delete items | http://127.0.0.1:8000/item/{slug:slug}/ | GET, PUT, DELETE, HEAD, OPTIONS | authenticated users, token or session required | 
-| List, create order | http://127.0.0.1:8000/order/ | GET, POST, HEAD, OPTIONS | authenticated users, token or session required | 
-| Detail, update, delete order | http://127.0.0.1:8000/order/{slug:slug}/ | GET, PUT, DELETE, HEAD, OPTIONS | authenticated users, token or session required | 
+
+| List, create items | http://127.0.0.1:8000/item/ | GET, POST, HEAD, OPTIONS  | authenticated users, token or session required |
+
+| Detail, update, delete items | http://127.0.0.1:8000/item/{slug:slug}/ | GET, PUT, DELETE, HEAD, OPTIONS | authenticated users, token or session required |
+
+| List, create order | http://127.0.0.1:8000/order/ | GET, POST, HEAD, OPTIONS | authenticated users, token or session required |
+
+| Detail, update, delete order | http://127.0.0.1:8000/order/{slug:slug}/ | GET, PUT, DELETE, HEAD, OPTIONS | authenticated users, token or session required |
+
 
 
 INSTALLATION:
